@@ -11,16 +11,16 @@
     $array = array(1, 2, 3, 4);
     $array1 = array('fabio' => 30, 'eber' => 40, 'woquiton' => 60);
     $array2 = array(0 => 5, 6 => 8, 9 => 15);
-        
-    while ($item = current($array1)) {
 
-        echo key($array1), "\n";
-
-        next($array1);
-    }
+    $array2[6] = 20;
     
     foreach($array as $item){
-        echo $item . '<br>';
+
+        $r = random_int(0, 255);
+        $g = random_int(0, 255);
+        $b = random_int(0, 255);
+        
+        echo "<p style=\"background-color: rgb($r, $g, $b)\"> $item </p>";
     }
 
     echo '<br>';
@@ -37,5 +37,6 @@
 
 ?>
     
+    <script src="index.js"></script>
 </body>
 </html>
