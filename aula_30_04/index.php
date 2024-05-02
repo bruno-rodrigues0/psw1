@@ -35,6 +35,22 @@
         echo $item . '<br>';
     }
 
+    $aluno['nome'] = 'Bruno';
+    $aluno['idade'] = 17;
+    $aluno['endereco'] = 'Rua Jalin Mamey, 123';
+    $aluno['cidade'] = 'Montalvânia';
+    $aluno['estado'] = 'MG';
+    $aluno['cpf'] = '000.000.000-01';
+
+    echo '<br>';
+
+    echo $aluno['nome'] . '<br>';
+    echo $aluno['idade'] . '<br>';
+    echo $aluno['endereco'] . '<br>';
+    echo $aluno['cidade'] . '<br>';
+    echo $aluno['estado'] . '<br>';
+    echo $aluno['cpf'] . '<br>';
+
 ?>
     
     <script src="index.js"></script>
