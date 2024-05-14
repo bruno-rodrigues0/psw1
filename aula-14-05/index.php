@@ -67,5 +67,45 @@
         
         ?>
     </pre>
+
+    <h2>Impressao de array multidimensional</h2>
+
+    <pre>
+        <p>Powershell 7.4.2</p>
+
+        <?php 
+        $aluno = array(
+            'Maria' => array(
+                'idade' => 17,
+                'endereco' => array (
+                    'rua' => 'Rua Oscar Alho, 600',
+                    'bairro' => 'Bairro Jalimah Mey'
+                ),
+                'cpf' => '000.000.000-01'
+            ),
+            'Bruno' => array(
+                'idade' => 17,
+                'endereco'=> array (
+                    'rua' => 'Rua Oscar Alho, 69',
+                    'bairro' => 'Bairro Jalimah Mey'
+                ),
+                'cpf' => '000.000.000-02'
+            )
+        );
+
+        foreach ($aluno as $key => $item) {
+            foreach ($item as $key2 => $item2) {
+                if (is_array( $item2 )) {
+                    foreach ($item2 as $key3 => $item3) {
+                        echo "<p>" . $key . " => " . $key2 . " => " . $key3 . " => " . $item3 . "</p>";
+                    }
+                } else {
+                    echo "<p>" . $key . " => " . $key2 . " => " . $item2 . "</p>";
+                }
+            }
+        }
+
+        ?>
+    </pre>
 </body>
 </html>
