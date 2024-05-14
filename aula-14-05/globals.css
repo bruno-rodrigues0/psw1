@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    padding: 10px;
+    background-color: rgb(46, 47, 49);
+}
+
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    margin-block: 16px;
+}
+
+pre {
+    background-color: rgba(88, 88, 88, 0.575);
+    border-radius: 8px;
+    white-space: normal;
+}
+
+p {
+    padding: 8px;
+}
+
+pre > p:nth-child(1n + 2)::before{
+    content: "PS C:\\xampp\\htdocs\\psw1\\aula-14-05>  ";
+}
