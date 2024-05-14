@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="globals.css">
 </head>
 <body>
-    
+
     <h1>Array - laços</h1>
-    <h2>Exemplo 01</h2>
+    <h2>Impressao de array [hardcoded]</h2>
 
     <pre>
         <p>Powershell 7.4.2</p>
@@ -25,7 +25,7 @@
         ?>
     </pre>
 
-    <h2>Exemplo 02</h2>
+    <h2>Impressao de array [for]</h2>
 
     <pre>
         <p>Powershell 7.4.2</p>
@@ -37,7 +37,7 @@
         ?>
     </pre>
 
-    <h2>Exemplo 03</h2>
+    <h2>Impressao de array [foreach]</h2>
 
     <pre>
         <p>Powershell 7.4.2</p>
@@ -46,6 +46,25 @@
         foreach ($a3 as $item){
             echo "<p>" . $item . "</p>";
         }
+        ?>
+    </pre>
+
+    <h2>Impressao de array [key => value]</h2>
+
+    <pre>
+        <p>Powershell 7.4.2</p>
+        <?php 
+        $a4 = array(
+            "Maria" => 25,
+            "João" => 44,
+            "José" => 12,
+            "Neusa" => 73
+        );
+
+        foreach ($a4 as $key => $item) {
+            echo "<p>". $key . " => " . $item . "</p>";
+        }
+        
         ?>
     </pre>
 </body>
