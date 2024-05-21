@@ -36,6 +36,7 @@ $keys = [
 
 for($i = 0; $i < count($keys); $i++) {
     for($j = 0; $j < count($keys[$i]); $j++){
+        echo "\n";
         print ($array['alunos'][$i][$keys[$i][$j]]);
         echo "\n";
     }
