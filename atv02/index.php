@@ -40,6 +40,7 @@
         ];
     ?>
 
+    <h2>Aprovados</h2>
     <table>
         <tr>
             <th>Nome</th>
@@ -47,6 +48,28 @@
         </tr>
 
         <?= aprovados($array)?>
+
+    </table>
+
+    <h2>Na final</h2>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Nota</th>
+        </tr>
+
+        <?= naFinal($array)?>
+
+    </table>
+
+    <h2>Reprovado</h2>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Nota</th>
+        </tr>
+
+        <?= reprovados($array)?>
 
     </table>
 </body>
