@@ -17,10 +17,10 @@
 
         $a1 = array('antonio', 'luiz', 'josé', 'joao');
         
-        echo "<p>" . $a1[0] . "</p>";
-        echo "<p>" . $a1[1] . "</p>";
-        echo "<p>" . $a1[2] . "</p>";
-        echo "<p>" . $a1[3] . "</p>";
+        // echo "<p>" . $a1[0] . "</p>";
+        // echo "<p>" . $a1[1] . "</p>";
+        // echo "<p>" . $a1[2] . "</p>";
+        // echo "<p>" . $a1[3] . "</p>";
 
         ?>
     </pre>
@@ -32,7 +32,7 @@
         <?php 
         $a2 = array(10, 9, 8, 7);
         for ($i = 0; $i < sizeof($a2); $i++) {
-            echo "<p>" . $a2[$i] . "</p>";
+            // echo "<p>" . $a2[$i] . "</p>";
         }
         ?>
     </pre>
@@ -44,7 +44,7 @@
         <?php 
         $a3 = array(10, 9, 8, 7);
         foreach ($a3 as $item){
-            echo "<p>" . $item . "</p>";
+            // echo "<p>" . $item . "</p>";
         }
         ?>
     </pre>
@@ -62,7 +62,7 @@
         );
 
         foreach ($a4 as $key => $item) {
-            echo "<p>". $key . " => " . $item . "</p>";
+            // echo "<p>". $key . " => " . $item . "</p>";
         }
         
         ?>
@@ -74,36 +74,64 @@
         <p>Powershell 7.4.2</p>
 
         <?php 
-        $aluno = array(
-            'Maria' => array(
+        $aluno = [
+            'Maria' => [
                 'idade' => 17,
-                'endereco' => array (
+                'endereco' => [
                     'rua' => 'Rua Oscar Alho, 600',
                     'bairro' => 'Bairro Jalimah Mey'
-                ),
+                ],
                 'cpf' => '000.000.000-01'
-            ),
-            'Bruno' => array(
+            ],
+            'Bruno' => [
                 'idade' => 17,
-                'endereco'=> array (
+                'endereco'=> [
                     'rua' => 'Rua Oscar Alho, 69',
                     'bairro' => 'Bairro Jalimah Mey'
-                ),
+                ],
                 'cpf' => '000.000.000-02'
-            )
-        );
+            ]
+        ];
 
-        foreach ($aluno as $key => $item) {
-            foreach ($item as $key2 => $item2) {
-                if (is_array( $item2 )) {
-                    foreach ($item2 as $key3 => $item3) {
-                        echo "<p>" . $key . " => " . $key2 . " => " . $key3 . " => " . $item3 . "</p>";
-                    }
-                } else {
-                    echo "<p>" . $key . " => " . $key2 . " => " . $item2 . "</p>";
-                }
-            }
-        }
+        $array = [
+            'alunos' => [
+                [
+                    'id' => 1,
+                    'nome' => 'fabio',
+                    'idade' => 20
+                ],
+                [
+                    'id' => 2,
+                    'nome' => 'jao',
+                    'idade' => 25
+                ],
+                [
+                    'id' => 3,
+                    'nome' => 'zeka',
+                    'idade' => 18
+                ]
+            ]
+        ];
+
+        // foreach ($aluno as $key => $item) {
+        //     foreach ($item as $key2 => $item2) {
+        //         if (is_array( $item2 )) {
+        //             foreach ($item2 as $key3 => $item3) {
+        //                 echo "<p>" . $key . " => " . $key2 . " => " . $key3 . " => " . $item3 . "</p>";
+        //             }
+        //         } else {
+        //             echo "<p>" . $key . " => " . $key2 . " => " . $item2 . "</p>";
+        //         }
+        //     }
+        // }
+
+        $keys = array_keys( $aluno );
+
+        print_r( $array['alunos'][0]);
+
+        // for ($i = 0; 0 < count($keys); $i++){
+        //     echo "" . $aluno[$keys[$i]];
+        // }
 
         ?>
     </pre>
