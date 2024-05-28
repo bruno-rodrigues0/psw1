@@ -1,8 +1,6 @@
 <?php 
 
-function sum (float $a, float $b): float {
-    return $a + $b;
-}
+function sumul($a,$b,$c){return ($a+$b)*$c;}
 
 function sub (float $a, float $b): float {
     return $a - $b;
@@ -32,4 +30,6 @@ function sqroot (float $a, float $b): float {
     return $a / sqrt($b);
 }
 
-echo (sum(5, 7.8));
+echo sumul(4, 6, 6);
+
+echo strlen('function sumul($a,$b,$c){return ($a+$b)*$c;}');
