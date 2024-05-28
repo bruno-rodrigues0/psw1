@@ -30,6 +30,13 @@ function sqroot (float $a, float $b): float {
     return $a / sqrt($b);
 }
 
-echo sumul(4, 6, 6);
+function exemplo ($a, $b){
+    $valor = ($a * $b) + ($b - $a) + ($a / $b);
+    return $valor;
+}
 
-echo strlen('function sumul($a,$b,$c){return ($a+$b)*$c;}');
+$valor = exemplo(4, 6);
+
+function e2 ($a){return $a**$a;}
+
+echo e2(3);
